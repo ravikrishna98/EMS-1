@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'employee-m-s';
+  
+  onClick(){
+
+  }
+
+  changeStatus(hide:boolean,showUserHomePage:boolean){
+   
+    
+  }
+  
 }

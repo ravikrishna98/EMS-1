@@ -1,0 +1,22 @@
+<div *ngIf="!mainHomeComponentHide">
+<nav class="navbar navbar-expand-sm bg-light" >
+  <div class="container-fluid" >
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a routerLink="user/login" class="nav-link" routerLinkActive="active" >
+          User Login
+        </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="admin/login" class="nav-link" routerLinkActive="active">
+          Admin Login
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

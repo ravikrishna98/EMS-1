@@ -1,0 +1,22 @@
+<app-user-homepage></app-user-homepage>
+<p>myproject works!</p>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Position</th>
+        <th scope="col">name</th>
+        <th scope="col">weight</th>
+        <th scope="col">symbol</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr let *ngFor="let emp of employeeList; let i= index">
+        <td>{{emp.position}}</td>
+        <td>{{emp.name}}</td>
+        <td>{{emp.weight}}</td>
+        <td>{{emp.symbol}}</td>
+        <td><button class="btn btn-primary" >Update</button></td>
+        <td><button class="btn btn-primary">Delete</button></td>
+      </tr>     
+    </tbody>
+  </table>
